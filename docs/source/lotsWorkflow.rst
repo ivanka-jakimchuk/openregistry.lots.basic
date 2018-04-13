@@ -27,25 +27,9 @@ Lots Workflow
                     color=white;
             }
 
-            subgraph cluster_1 {
-                    node [style=dashed];
-                    edge[style=dashed, dir="forward"];
-                    "active.salable" -> "recomposed" [color="0.0000 0.0000 0.3882"];
-                    edge[style=solid, dir="forward"];
-                    "recomposed" -> "pending" [color="0.6667 1.0000 0.5020"];
-            }
 
-            edge[style=dashed, arrowhead="vee"]
-            "pending" -> "deleted" [color="0.0000 0.0000 0.3882"];
-            edge[style=solid];
-            node [style=dashed];
-            edge[style=dashed];
-            "active.salable" -> "pending.dissolution" [color="0.0000 0.0000 0.3882"];
-            edge[style=solid];
-            node [style=solid];
-            "pending.dissolution" -> "dissolved" [color="0.6667 1.0000 0.5020"];
-             
-    }
+
+
 
 
 Legend
